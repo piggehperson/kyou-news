@@ -11,5 +11,10 @@ ThemeData kyouTheme = ThemeData(
     // Notice that the counter didn't reset back to zero; the application
     // is not restarted.
     brightness: Brightness.light,
-    primarySwatch: Colors.deepPurple,
-    scaffoldBackgroundColor: Color.fromRGBO(224, 224, 240, 1.0));
+    primaryColor: Colors.white,
+    scaffoldBackgroundColor: Color.fromARGB(
+      255,
+      224,
+      224,
+      240,
+    ));

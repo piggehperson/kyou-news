@@ -25,11 +25,20 @@ class _HomePageState extends State<HomePage> {
         title: Text("uwu"),
       ),
       body: Center(
-          child: FlutterLogo(
-        size: 80.0,
+          child: Column(
+        children: [
+          FlutterLogo(
+            size: 80.0,
+          ),
+          Card(
+            child: SizedBox(
+              width: 160,
+              height: 90,
+            ),
+          )
+        ],
       )),
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.deepPurpleAccent,
         items: [
           BottomNavigationBarItem(
               icon: Icon(Icons.calendar_today), label: "Today"),

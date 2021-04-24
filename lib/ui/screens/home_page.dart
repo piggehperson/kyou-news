@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:kyou/ui/widgets/news_card.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -30,12 +31,8 @@ class _HomePageState extends State<HomePage> {
           FlutterLogo(
             size: 80.0,
           ),
-          Card(
-            child: SizedBox(
-              width: 160,
-              height: 90,
-            ),
-          )
+          NewsCard("Title", "Text text text", "Category",
+              "https://placekitten.com/640/360", null),
         ],
       )),
       bottomNavigationBar: BottomNavigationBar(

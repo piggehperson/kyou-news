@@ -25,16 +25,19 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("uwu"),
       ),
-      body: Center(
-          child: Column(
-        children: [
-          FlutterLogo(
-            size: 80.0,
-          ),
-          NewsCard("Title", "Text text text", "Category",
-              "https://placekitten.com/640/360", null),
-        ],
-      )),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            FlutterLogo(
+              size: 80.0,
+            ),
+            NewsCard("Headline", "Text text text", "CATEGORY",
+                "https://placekitten.com/640/360", null),
+            NewsCard("Headline", "Text text text", "CATEGORY",
+                "https://placekitten.com/641/360", null),
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
